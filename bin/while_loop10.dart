@@ -7,14 +7,14 @@
   
 */
 String func(int a) {
-  int x = 0;
+  int x = 1;
   int y = 0;
   String i = '';
-  while (x < a) {
-    x++;
+  while (x <= a) {
     if (a % x == 0) {
       y++;
     }
+    x++;
   }
   if (y == 2) {
     i = 'tup son';
@@ -25,5 +25,5 @@ String func(int a) {
 }
 
 void main() {
-  print(func(8));
+  print(func(17));
 }
