@@ -10,8 +10,8 @@ String func(int a) {
   while (n <= a) {
     if (n % 2 == 0) {
       s += n.toString();
+      n += 2;
     }
-    n = n + 1;
   }
   return s;
 }
